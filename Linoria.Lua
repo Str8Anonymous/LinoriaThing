@@ -400,9 +400,9 @@ do
             Value = Info.Default;
             Transparency = Info.Transparency or 0;
             Type = 'ColorPicker';
+            Name = 'Color',
             Title = type(Info.Title) == 'string' and Info.Title or 'Color picker',
             Callback = Info.Callback or function(Color) end;
-            Name = Info.Name or 'Color',
         };
 
         function ColorPicker:SetHSVFromRGB(Color)
@@ -440,7 +440,7 @@ do
         -- Thus the color picker would never show
 
         local PickerFrameOuter = Library:Create('Frame', {
-            Name = Info.Name or 'Color';
+            Name = ColorPicker;
             BackgroundColor3 = Color3.new(1, 1, 1);
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.fromOffset(DisplayFrame.AbsolutePosition.X, DisplayFrame.AbsolutePosition.Y + 18),
@@ -624,7 +624,7 @@ do
             Position = UDim2.fromOffset(5, 5);
             TextXAlignment = Enum.TextXAlignment.Left;
             TextSize = 14;
-            Text = "AAAAAAAAAAAAAAAA1222222",--Info.Default;
+            Text = ColorPicker.Title,--Info.Default;
             TextWrapped = false;
             ZIndex = 16;
             Parent = PickerFrameInner;
