@@ -400,7 +400,6 @@ do
             Value = Info.Default;
             Transparency = Info.Transparency or 0;
             Type = 'ColorPicker';
-            Name = 'Color',
             Title = type(Info.Title) == 'string' and Info.Title or 'Color picker',
             Callback = Info.Callback or function(Color) end;
         };
@@ -440,7 +439,7 @@ do
         -- Thus the color picker would never show
 
         local PickerFrameOuter = Library:Create('Frame', {
-            Name = ColorPicker;
+            Name = 'Color';
             BackgroundColor3 = Color3.new(1, 1, 1);
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.fromOffset(DisplayFrame.AbsolutePosition.X, DisplayFrame.AbsolutePosition.Y + 18),
