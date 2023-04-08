@@ -384,8 +384,7 @@ Library:GiveSignal(ScreenGui.DescendantRemoving:Connect(function(Instance)
         Library:RemoveFromRegistry(Instance);
     end;
 end))
-print("XwwwwDaaaaaaaaa")
-print("@@@@@@@@@@@@@@@@@@@@@")
+
 local BaseAddons = {};
 
 do
