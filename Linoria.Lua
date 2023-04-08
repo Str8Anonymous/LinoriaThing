@@ -440,7 +440,7 @@ do
         -- Thus the color picker would never show
 
         local PickerFrameOuter = Library:Create('Frame', {
-            Name = ColorPicker or 'aaasdadasdasdadad';
+            Name = ColorPicker;
             BackgroundColor3 = Color3.new(1, 1, 1);
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.fromOffset(DisplayFrame.AbsolutePosition.X, DisplayFrame.AbsolutePosition.Y + 18),
