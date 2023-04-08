@@ -3001,7 +3001,7 @@ function Library:CreateWindow(...)
         local TabButtonWidth = Library:GetTextBounds(Name, Library.Font, 16);
 
         local TabButton = Library:Create('Frame', {
-            Name = Name,
+            Name = Name;
             BackgroundColor3 = Library.BackgroundColor;
             BorderColor3 = Library.OutlineColor;
             Size = UDim2.new(0, TabButtonWidth + 8 + 4, 1, 0);
@@ -3017,7 +3017,7 @@ function Library:CreateWindow(...)
         local TabButtonLabel = Library:CreateLabel({
             Position = UDim2.new(0, 0, 0, 0);
             Size = UDim2.new(1, 0, 1, -1);
-            Name = Name,
+            Name = Name;
             Text = Name;
             ZIndex = 1;
             Parent = TabButton;
