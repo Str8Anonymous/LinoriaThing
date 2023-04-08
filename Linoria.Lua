@@ -384,7 +384,7 @@ Library:GiveSignal(ScreenGui.DescendantRemoving:Connect(function(Instance)
         Library:RemoveFromRegistry(Instance);
     end;
 end))
-
+print("XD")
 local BaseAddons = {};
 
 do
