@@ -402,6 +402,7 @@ do
             Type = 'ColorPicker';
             Title = type(Info.Title) == 'string' and Info.Title or 'Color picker',
             Callback = Info.Callback or function(Color) end;
+            Name = Info.Name or 'Color',
         };
 
         function ColorPicker:SetHSVFromRGB(Color)
